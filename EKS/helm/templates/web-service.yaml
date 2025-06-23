@@ -36,9 +36,9 @@ metadata:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-    # alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:658642482266:certificate/90b9a8e7-55d1-4f6e-abc2-cce1ca4e7798
-    # alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:658642482266:certificate/58ac6461-3183-4ddf-a62e-d08fb7e6d32c
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
 spec:
   rules:
   - host: tic-tac-toe.duyngo.xyz  # Replace with your actual domain
