@@ -7,6 +7,11 @@ metadata:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:658642482266:certificate/ccf60f36-a161-4b0f-98ac-6f4a0bc179bc
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/group.name: tic-tac-toe
+    alb.ingress.kubernetes.io/group.order: '1'
 spec:
   rules:
     - http:
